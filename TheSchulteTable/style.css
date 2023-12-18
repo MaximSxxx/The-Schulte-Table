@@ -1,0 +1,183 @@
+body {
+  background-color: #fff;
+  font-family: "Georgia";
+  text-align: center;
+  z-index: 1;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.rules {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.rules ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.rules li:before {
+  content: "";
+}
+
+.menu {
+  margin-top: 20px;
+}
+
+.player-info {
+  margin-bottom: 10px;
+}
+
+.player-info label {
+  display: block;
+}
+
+.player-info input[type="text"] {
+  width: 200px; 
+  height: 30px;
+  text-align: center;
+  font-size: 18px; 
+}
+
+.level-buttons {
+  margin-bottom: 13px;
+}
+
+.level-btn {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ECECEC;
+  cursor: pointer;
+}
+
+.level-btn.selected {
+  border: 2px solid #355070;
+}
+
+.game-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.game-table {
+  background-color: #fff;
+  border: 4px outset #023047;
+  border-collapse: collapse;
+  margin-right: 10px;
+}
+
+td {
+  border: 1px solid #023047;
+  width: 80px;
+  height: 80px;
+  color: #000;
+  text-align: center;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+td:hover {
+  background-color: #b0e56b;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-content {
+  background-color: #fff;
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#game-over-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#game-over-modal.hidden {
+  display: none;
+}
+
+#timer-container {
+  margin-top: 20px;
+}
+
+#timer {
+  font-size: 2em;
+}
+
+#start-btn {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  background-color: forestgreen;
+  color: #fff;
+  border-color: #000000;
+  border-radius: 10px;
+}
+
+#stop-btn {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  background-color: firebrick;
+  color: #fff;
+  border-color: #000000;
+  border-radius: 10px;
+}
+
+#result-table-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#result-table {
+  margin: 0 auto;
+  font-size: 15px;
+}
+
+.game-table {
+  position: relative; 
+}
+
+.center-dot {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 10px; 
+  height: 10px;
+  background-color: red; 
+  border-radius: 50%; 
+}
+
+body::before {
+  left: 0;
+}
+
+body::after {
+  right: 0;
+}
+
+
+.my_class {
+  margin-top: 100px;
+}

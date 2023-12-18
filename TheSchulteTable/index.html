@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Таблица Шульте</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">Таблица Шульте</h1>
+  </header>
+
+  <section class="rules">
+    <p class="rules__description">Правила игры:</p>
+    <ul class="rules__list">
+      <li class="rules__item">Нажимайте на числа в порядке возрастания.</li>
+      <li class="rules__item">Не отрывайте свой взгляд от точки.</li>
+      <li class="rules__item">Игра заканчивается, когда все числа нажаты.</li>
+      <li class="rules__item">Попробуйте пройти игру как можно быстрее!</li>
+    </ul>
+  </section>
+
+  <section class="menu">
+    <div class="player-info">
+      <input id="player-name-input" type="text" placeholder="Введите свое имя" class="player-info__input">
+    </div>
+    <button id="start-btn" class="menu__button">Старт</button>
+    <button id="stop-btn" class="menu__button hidden">Стоп</button>
+  </section>
+
+  <section class="game">
+    <div class="game-container">
+      <table id="game-table" class="game-table"></table>
+    </div>
+    <div id="timer-container" class="hidden">
+      <h2 class="timer-container__title">Время:</h2>
+      <div id="timer" class="timer-container__timer">00:00</div>
+    </div>
+    <div id="game-over-modal" class="hidden">
+      <div class="modal-content">
+        <h2 class="modal-content__title">Игра окончена!</h2>
+        <p id="player-name" class="modal-content__player-name"></p>
+        <p id="game-time" class="modal-content__game-time"></p>
+        <button id="close-modal-btn" class="modal-content__close-btn">Закрыть</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="result">
+    <h2 class="result__title">Результаты</h2>
+    <table id="result-table" class="result-table">
+      <thead>
+        <tr>
+          <th class="result-table__header">Место</th>
+          <th class="result-table__header">Ник</th>
+          <th class="result-table__header">Время</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
